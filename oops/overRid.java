@@ -17,8 +17,9 @@ class A {
         System.out.println("in config of A");
     }
 }
-class B extends A{
-    public void show(){
+
+class B extends A {
+    public void show() {
         System.out.println("in show of B");
     }
 }

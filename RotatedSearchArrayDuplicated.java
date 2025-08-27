@@ -1,6 +1,8 @@
 public class RotatedSearchArrayDuplicated {
     public static void main(String[] args) {
         int[] arr = { 4, 5, 6, 7, 0, 1, 2, 4, 4 };
+        int target = 0;
+        System.out.println(search(arr, target));
     }
 
     static boolean search(int[] nums, int target) {
@@ -45,7 +47,7 @@ public class RotatedSearchArrayDuplicated {
                 if (start < end && arr[start] > arr[start + 1])
                     return start;
                 start++;
-                if (end > start && arr[end-1] > arr[end])
+                if (end > start && arr[end - 1] > arr[end])
                     return end - 1;
                 end--;
             } else if (arr[start] < arr[mid] || (arr[start] == arr[mid] && arr[mid] > arr[end]))
