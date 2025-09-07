@@ -7,7 +7,7 @@ enum Electronic {
         this.price= p;
     }
 
-    private int getPrice() {
+    public int getPrice() {
         return price;
     }
 }
